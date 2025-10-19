@@ -14,7 +14,9 @@
     "check": "bunx biome check --write",
     "dev": "bun --filter '*' dev",
     "web:dev": "bun --filter @repo/web dev",
-    "web:install": "bun install --filter @repo/web"
+    "web:install": "bun install --filter @repo/web",
+    "api:dev": "bun --filter @repo/api dev",
+    "api:install": "bun install --filter @repo/api"
   },
   "type": "module",
   "workspaces": {
