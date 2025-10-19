@@ -22,6 +22,7 @@
         "zod": "catalog:",
       },
       "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
         "@types/bun": "catalog:",
         "drizzle-kit": "^0.31.5",
       },
@@ -34,10 +35,14 @@
         "react-router": "^7.9.4",
       },
       "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
         "@types/bun": "catalog:",
         "@types/react": "catalog:",
         "@types/react-dom": "catalog:",
       },
+    },
+    "packages/typescript-config": {
+      "name": "@repo/typescript-config",
     },
   },
   "catalog": {
@@ -159,6 +164,8 @@
     "@neon-rs/load": ["@neon-rs/load@0.0.4", "", {}, "sha512-kTPhdZyTQxB+2wpiRcFWrDcejc4JI6tkPuS7UZCG4l6Zvc5kU/gGQ/ozvHTh1XR5tS+UlfAfGuPajjzQjCiHCw=="],
 
     "@repo/api": ["@repo/api@workspace:apps/api"],
+
+    "@repo/typescript-config": ["@repo/typescript-config@workspace:packages/typescript-config"],
 
     "@repo/web": ["@repo/web@workspace:apps/web"],
 

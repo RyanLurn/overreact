@@ -1,33 +1,11 @@
 {
+  "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    // Environment setup & latest features
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "module": "Preserve",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "allowJs": true,
-
-    // Bundler mode
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-
-    // Best practices
-    "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // Path aliases
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
 }

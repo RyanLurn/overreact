@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/bun": "catalog:",
-    "drizzle-kit": "^0.31.5"
+    "drizzle-kit": "^0.31.5",
+    "@repo/typescript-config": "workspace:*"
   }
 }
