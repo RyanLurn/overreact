@@ -16,7 +16,9 @@
     "web:dev": "bun --filter @repo/web dev",
     "web:install": "bun install --filter @repo/web",
     "api:dev": "bun --filter @repo/api dev",
-    "api:install": "bun install --filter @repo/api"
+    "api:install": "bun install --filter @repo/api",
+    "api:db:generate": "bun --filter @repo/api db:generate",
+    "api:db:migrate": "bun --filter @repo/api db:migrate"
   },
   "type": "module",
   "workspaces": {
@@ -27,6 +29,8 @@
     "catalog": {
       "react": "^19.2.0",
       "react-dom": "^19.2.0",
+      "@t3-oss/env-core": "^0.13.8",
+      "zod": "^4.1.12",
       "@types/bun": "^1.3.0",
       "@types/react": "^19.2.0",
       "@types/react-dom": "^19.2.0"

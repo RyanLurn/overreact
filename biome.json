@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!**/*.html"],
+    "includes": ["**", "!**/*.html", "!**/db/migrations"],
     "ignoreUnknown": false
   },
   "formatter": {
