@@ -1,0 +1,11 @@
+{
+  "name": "overreact",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
