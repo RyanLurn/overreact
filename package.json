@@ -1,11 +1,11 @@
 {
   "name": "overreact",
-  "module": "index.ts",
   "type": "module",
   "scripts": {
     "format": "bunx biome format --write",
     "lint": "bunx biome lint --write",
-    "check": "bunx biome check --write"
+    "check": "bunx biome check --write",
+    "web:dev": "bun --filter @repo/web dev"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.6",
@@ -17,7 +17,7 @@
   },
   "workspaces": {
     "packages": [
-      "apps/*",
+      "apps/**",
       "packages/*"
     ],
     "catalog": {
