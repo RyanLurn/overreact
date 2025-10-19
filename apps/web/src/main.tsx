@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Hello } from "./components/hello";
+import { AppProvider } from "@/components/providers";
 
 const rootElement = document.getElementById("root");
 // Exist to make TS happy
@@ -10,7 +10,7 @@ if (!rootElement) {
 
 const app = (
   <StrictMode>
-    <Hello />
+    <AppProvider />
   </StrictMode>
 );
 

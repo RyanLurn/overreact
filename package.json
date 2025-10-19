@@ -1,12 +1,5 @@
 {
   "name": "overreact",
-  "type": "module",
-  "scripts": {
-    "format": "bunx biome format --write",
-    "lint": "bunx biome lint --write",
-    "check": "bunx biome check --write",
-    "web:dev": "bun --filter @repo/web dev"
-  },
   "devDependencies": {
     "@biomejs/biome": "2.2.6",
     "lefthook": "^1.13.6",
@@ -15,6 +8,15 @@
   "peerDependencies": {
     "typescript": "^5.9.3"
   },
+  "scripts": {
+    "format": "bunx biome format --write",
+    "lint": "bunx biome lint --write",
+    "check": "bunx biome check --write",
+    "dev": "bun --filter '*' dev",
+    "web:dev": "bun --filter @repo/web dev",
+    "web:install": "bun install --filter @repo/web"
+  },
+  "type": "module",
   "workspaces": {
     "packages": [
       "apps/**",
