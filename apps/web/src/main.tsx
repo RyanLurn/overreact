@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { AppProvider } from "@/components/providers";
+import "@repo/ui/globals.css";
 
 const rootElement = document.getElementById("root");
 // Exist to make TS happy
