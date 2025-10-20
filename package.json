@@ -18,7 +18,8 @@
     "api:dev": "bun --filter @repo/api dev",
     "api:install": "bun install --filter @repo/api",
     "api:db:generate": "bun --filter @repo/api db:generate",
-    "api:db:migrate": "bun --filter @repo/api db:migrate"
+    "api:db:migrate": "bun --filter @repo/api db:migrate",
+    "ui:install": "bun install --filter @repo/ui"
   },
   "type": "module",
   "workspaces": {
